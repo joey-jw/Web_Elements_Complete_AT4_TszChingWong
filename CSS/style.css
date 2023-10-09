@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    margin: 0 auto;
+    font-family: sans-serif, arial;
+    border: 1px dashed black;
+
+}
+
+main,
+#header,
+nav {
+    width: 80%;
+    /* max-width: 1800px;*/
+}
+
+/* header styling */
+#header {
+    width: 80%;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+
+}
+
+#logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+#banner {
+    width: 100%;
+    height: 200px;
+
+}
+
+/* navigation styling */
+nav {
+    position: fixed;
+    top: 200px;
+
+}
+
+#nav-list {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    /*box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.8);*/
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav li,
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+nav>li,
+a:hover {
+    color: #FF6FFF;
+}
+
+nav>ul:hover,
+#active {
+    background-color: #000;
+
+}
+
+/*article home-page*/
+
+
+.grid-container {
+    width: 100%;
+    margin-top: 220px;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr 600px;
+    grid-template-rows: 300px 300px;
+    overflow: hidden;
+    padding: 10px 20px;
+    align-items: center;
+    grid-gap: 25px;
+}
+
+.grid-one,
+.grid-two {
+    grid-column: 1/3;
+    overflow: hidden;
+    align-self: center;
+    min-width: 480px;
+
+}
+
+.grid-three {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+#authorpic {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.about {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section div p {
+    font-size: 1em;
+    line-height: 25px;
+}
+
+
+/* article gallery */
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 248px;
+    background-color: #fff;
+    justify-items: center;
+    align-items: center;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+
+.gallerypic {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    padding: 18px 18px;
+}
+
+.gallerybox {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.gallerytext {
+    color: #000;
+    text-align: center;
+
+
+}
+
+/* footer */
+footer {
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.social a {
+    margin-right: 20px;
+    filter: invert(1);
+    transition: 0.8s;
+
+}
+
+.social a:hover {
+    transform: scale(0.9);
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 20px;
+}
